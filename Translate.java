@@ -9,17 +9,21 @@ package emoji.translator;
 import java.util.Scanner;
 
 
-// Making translate the child of InputHandler to be able to use getUserInput??
-public class Translate extends InputHandler {
+public class Translate {
     
-Emoji Manager emoji;
+    EmojiHandler emoji;
+    Inputhandler input;
+    
 
     // Default Constructor 
     public Translate(){
-
+    this.emoji = new EmojiHandler();
+    this.input = new InputHandler();
+        
     }
+    
     // Constructor
-    public Translate(String combo, EmojiHandler emoji, InputHandler inputHandler) {
+    public Translate(String combo, EmojiHandler emoji, InputHandler input) {
         this.combo = combo;
         this.emoji = emoji;
         this.inputHandler = inputHandler;
@@ -27,7 +31,7 @@ Emoji Manager emoji;
     
     // Getter for emojiHandler
     public EmojiHandler getEmojiHandler() {
-        return emojiHandler;
+        return emoji;
     }
     
     // Setter for emojiHandler
@@ -41,8 +45,13 @@ Emoji Manager emoji;
     }
     
     // Setter for inputHandler
-    public void setInputHandler(InputHandler inputHandler) {
-        this.inputHandler = inputHandler;
+    public void setInputHandler(InputHandler input) {
+        this.inputHandler = input;
+    }
+
+    // Method to search for matching substring
+    public String compare(String text){
+        return text
     }
 
     // Method to perform translation
