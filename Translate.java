@@ -23,8 +23,7 @@ public class Translate {
     }
     
     // Constructor
-    public Translate(String combo, EmojiHandler emoji, InputHandler input) {
-        this.combo = combo;
+    public Translate( EmojiHandler emoji, InputHandler input) {
         this.emoji = emoji;
         this.inputHandler = inputHandler;
     }
