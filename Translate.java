@@ -9,8 +9,6 @@ package emoji.translator;
 import java.util.Scanner;
 
 
-
-
 // Making translate the child of InputHandler to be able to use getUserInput??
 public class Translate extends InputHandler {
     
@@ -48,17 +46,8 @@ Emoji Manager emoji;
     }
 
     // Method to perform translation
-    public String translate(String text) {
-        // Placeholder for translation logic
+    public String translated(String text) {
         // This method will use emojiHandler and inputHandler to translate text to emoji language
-        return "Translated text in " + language;
+        return "The text" + text + "in emoji is:" + combo;
     }
-
-    // Method to perform reverse translation (emoji to text)
-    public String reverseTranslate(String emojiText) {
-        // Placeholder for reverse translation logic
-        return "Reversed translation of emoji text";
-    }
-
-    // Additional methods can be added as necessary for the Translator's functionality
 }
