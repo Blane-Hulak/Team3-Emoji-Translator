@@ -3,6 +3,7 @@
  * Author: Sam Schaefer
  * Date: 12/04/2024
  * Description: This class wants to processe text, match substring with emoji table and replace them with emoji's.
+*/
 
 package emoji.translator;
 
