@@ -7,6 +7,9 @@ Our progamming team consists of 4 main contributors, these being Blane Hulak, El
 The workload for the project is split up into 4 classes made by seperate group members. The shared workload is below.
 
 EmojiManager.java - Ellie Earwood
+
 InputHandler.java - Blane Hulak
+
 Translator.java - Sam Schaefer
+
 GUI.java - Brayden Bond
