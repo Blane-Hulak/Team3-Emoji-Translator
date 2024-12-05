@@ -2,7 +2,7 @@
  * Project: Emoji Translator
  * Author: Sam Schaefer
  * Date: 12/04/2024
- * Description: This class is used to take the characters and translate them into characters.
+ * Description: This class wants to processe text, match substring with emoji table and replace them with emoji's.
 
 package emoji.translator;
 
@@ -21,7 +21,7 @@ Emoji Manager emoji;
 
     }
     // Constructor
-    public Translator(String combo, EmojiHandler emoji, InputHandler inputHandler) {
+    public Translate(String combo, EmojiHandler emoji, InputHandler inputHandler) {
         this.combo = combo;
         this.emoji = emoji;
         this.inputHandler = inputHandler;
