@@ -1,0 +1,42 @@
+//Still working through this...
+
+public class Translate {
+
+    EmojiManager emoji;
+    InputHandler input;
+    String[] keywords = { "love", "happy" };
+
+    // Default Constructor
+    public Translate() {
+        this.emoji = new EmojiManager();
+        this.input = new InputHandler();
+
+    }
+
+    // Constructor
+    public Translate(EmojiManager emoji, InputHandler input) {
+        this.emoji = emoji;
+        this.input = input;
+    }
+
+    // Method to perform translation
+    public String translated(String text) {
+        String[] words = text.split(" ");
+        StringBuilder translatedText = new StringBuilder();
+
+        for (String word : words) {
+            if (word.toLowerCase().contains(keywords[0])) {
+                String emoji = this.emoji.getEmoji(word.toLowerCase());
+                translatedText.append(emoji).append(" ");
+            } else {
+
+                translatedText.append(word).append(" ");
+
+            }
+
+        }
+        return translatedText.toString().trim();
+
+    }
+
+}
