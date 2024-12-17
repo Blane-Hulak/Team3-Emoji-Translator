@@ -7,14 +7,6 @@ package emoji.translator;
 import java.util.Scanner;
 
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-package emoji.translator;
-import java.util.Scanner;
-
-/*
  * Project: Emoji Translator
  * Date: 12/04/2024
  * Description: This class contains the methods for getting and outputting the users inputted String
