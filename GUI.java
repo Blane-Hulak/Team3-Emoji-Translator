@@ -1,19 +1,18 @@
 
-package emoji.translator;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * The GUI class provides a graphical user interface for the Emoji Translator application.
- * It allows users to input text, translate it to emoji, and view the result.
+ * The GUI class provides a graphical user interface for the Emoji Translator
+ * application. It allows users to input text, translate it to emoji, and view
+ * the result.
  */
 public class GUI {
 
     private EmojiManager emojiManager;
-    private Translator translator;
+    private Translate translator;
 
     /**
      * Constructor for the GUI that initializes the EmojiManager and Translator.
@@ -21,7 +20,7 @@ public class GUI {
     public GUI() {
         // Initialize EmojiManager and Translator
         emojiManager = new EmojiManager();
-        translator = new Translator(emojiManager, new InputHandler(), null);
+        translator = new Translate(emojiManager);
 
         // Add some sample emoji mappings
         emojiManager.addEmoji("happy", "😊");
@@ -75,7 +74,7 @@ public class GUI {
                 String userInput = inputField.getText();
 
                 // Process the input through the Translator
-                String translation = translator.translated(userInput, emojiManager);
+                String translation = translator.translator(userInput, emojiManager);
 
                 // Display the translated output
                 outputArea.setText(translation);
