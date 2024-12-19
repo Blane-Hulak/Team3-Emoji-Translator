@@ -26,12 +26,16 @@ public class Translate {
 
     // Method to perform translation
     public String translator(String userInput, EmojiManager emoji) {
+        //Taking out spaces from the String to store the other elements
         String[] words = userInput.split(" ");
+        //Allows string to be changeable
         StringBuilder translatedText = new StringBuilder();
 
+        //Loop sorting through every word in words array
         for (String word : words) {
+            //accounting for puncuation and lowercase letters
             String change = word.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-
+            //If a keyword is found, change the keyword to an emoji
             if (emoji.containsKeyword(change)) {
                 translatedText.append(emoji.getEmoji(change)).append(word.replaceAll("[a-zA-Z0-9]", ""));
             } else {
