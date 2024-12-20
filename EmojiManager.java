@@ -3,11 +3,15 @@ package emoji.translator;
 
 import java.util.HashMap;
 
-/**
- * The EmojiManager class provides a centralized repository for managing keyword-to-emoji mappings.
+/*
+ * Project: Emoji Translator
+ * Author: Ellie Earwood
+ * Date: 12/16/2024
+ * Description: The EmojiManager class provides a centralized repository for managing keyword-to-emoji mappings.
  * It allows adding, retrieving, and checking for emojis based on specific keywords.
  * This class is designed to be used by other components like the Translator for emoji replacements.
  */
+
 public class EmojiManager {
 
     // A HashMap to store keyword-to-emoji mappings
