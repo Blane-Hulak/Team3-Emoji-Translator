@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 /*
  * Project: Emoji Translator
+ * Author: Blane Hulak
  * Date: 12/04/2024
  * Description: This class contains the methods for getting and outputting the users inputted String
  * values.
