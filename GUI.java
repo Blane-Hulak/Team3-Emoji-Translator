@@ -4,11 +4,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * The GUI class provides a graphical user interface for the Emoji Translator
+/*
+ * Project: Emoji Translator
+ * Author: Sam Schaefer
+ * Date: 12/17/2024
+ * Description: The GUI class provides a graphical user interface for the Emoji Translator
  * application. It allows users to input text, translate it to emoji, and view
  * the result.
  */
+
 public class GUI {
 
     private EmojiManager emojiManager;
